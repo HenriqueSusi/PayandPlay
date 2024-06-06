@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FormativaMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FormativaMaui"
+    xmlns:pages="clr-namespace:FormativaMaui.Paginas"
+    Shell.FlyoutBehavior="Disabled"
+    Title="FormativaMaui">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="FlyoutItem">
+                <Setter Property="Shell.BackgroundColor" Value="White" />
+                <Setter Property="Shell.ForegroundColor" Value="Black" />
+                <Setter Property="Shell.TitleColor" Value="Black" />
+                <Setter Property="Shell.DisabledColor" Value="Gray" />
+                <Setter Property="Shell.UnselectedColor" Value="Gray" />
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="search.svg">
+        <ShellContent Route="home" ContentTemplate="{DataTemplate pages:Home}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configurações" Icon="search.svg">
+        <ShellContent Route="settings" ContentTemplate="{DataTemplate pages:Home}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sobre" Icon="search.svg">
+        <ShellContent Route="settings" ContentTemplate="{DataTemplate pages:Home}" />
+    </FlyoutItem>
+
+
+</Shell>

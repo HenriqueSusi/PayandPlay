@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormativaMaui.Paginas.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+    <Grid>
+    <Grid>
+        <VerticalStackLayout>
+            <Label Text="|Sobre " 
+TextColor="Red"
+FontSize="Title"
+FontAttributes="Italic" 
+HorizontalOptions="Start"
+        Margin="10,20,0,20"
+           VerticalOptions="Start"/>
+            <Label
+        Text="O Pay and Play é mais do que apenas um aplicativo de vendas de jogos - é um portal para um universo de entretenimento virtual. Com uma interface intuitiva e design elegante, o aplicativo torna a descoberta de novos jogos uma experiência emocionante. Desde os mais recentes lançamentos até os clássicos atemporais, o Pay and Play oferece uma variedade impressionante para todos os gostos e preferências."
+        FontAttributes="Italic"
+        TextColor="White"
+        FontSize="18"
+         Margin="10,20,0,20"
+        HorizontalOptions="Center"
+        VerticalOptions="Start"
+        />
+
+            
+        </VerticalStackLayout>
+    </Grid>
+    
+    <Grid VerticalOptions="End">
+    <Frame BackgroundColor="Black" HeightRequest="80" BorderColor="Red" Margin="0,10,0,0">
+        <Grid Row="2" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="1" Clicked="BtnMenuInferiorHome_Clicked" BackgroundColor="Black" Text="Home" TextColor="White" FontAttributes="Bold, Italic"></Button>
+            <Button Grid.Column="0" Clicked="BtnMenuInferiorPerfil_Clicked" BackgroundColor="Black" Text="Perfil" TextColor="White" FontAttributes="Bold, Italic"></Button>
+            <Button Grid.Column="2" Clicked="BtnMenuInferiorSair_Clicked" BackgroundColor="Black"  Text="Sair" TextColor="White" FontAttributes="Bold, Italic"></Button>
+
+        </Grid>
+    </Frame>
+    </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormativaMaui.Paginas.Confirmacao"
+             NavigationPage.HasNavigationBar="False"
+              BackgroundColor="Black">
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        Padding="20">
+        <Frame CornerRadius="10" BorderColor="Red" Padding="20" WidthRequest="300" HeightRequest="300" BackgroundColor="Black" Margin="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout>
+                <Label Text="Realmente deseja comprar esse jogo?"
+                       FontSize="Medium"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="COMPRAR"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            WidthRequest="100"
+                            Margin="10,0"
+                            Clicked="OnConfirmPurchase" />
+                    <Button Text="CANCELAR"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            WidthRequest="100"
+                            HeightRequest="40"
+                            Margin="10,0"
+                            Clicked="OnCancelPurchase" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormativaMaui.Paginas.Perfil"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+    <VerticalStackLayout Padding="20">
+        <Frame CornerRadius="10" BorderColor="Red" Padding="20" BackgroundColor="Black" Margin="10" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300">
+            <StackLayout>
+                <Label x:Name="BemVindo" Text="Bem Vindo" TextColor="White" HorizontalOptions="Center" Margin="0,35" FontSize="24" FontAttributes="Bold, Italic"></Label>
+                <ImageButton Source="perfil.svg" x:Name="Ftperfil" Aspect="AspectFit" Margin="10" CornerRadius="100" HeightRequest="200" WidthRequest="200"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                
+                <Entry Text="{Binding Nome}" Placeholder="Nome" PlaceholderColor="Gray" TextColor="White" 
+         FontAttributes="Bold" FontSize="18" Margin="0,20,0,10"/>
+                
+                <Entry Text="{Binding Email}" Placeholder="Email" TextColor="White" PlaceholderColor="Gray" FontAttributes="Bold" FontSize="18" Margin="0,20,0,10"/>
+                <Button Grid.Column="0" Grid.Row="3" x:Name="BTNSalvar" Clicked="BTNSalvar_Clicked" 
+                Margin="0,25" FontAttributes="Bold" HorizontalOptions="Center" Text="SALVAR" TextColor="Black" BackgroundColor="Red">
+                    <Button.Shadow>
+                        <Shadow Brush="Black" Offset="5,15" Radius="10" Opacity="0.3" />
+                    </Button.Shadow>
+                </Button>
+            </StackLayout>
+            
+        </Frame>
+        <Frame BackgroundColor="Black" HeightRequest="80" BorderColor="Red" Margin="0,10,0,0">
+        <Grid Row="2" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            
+                <Button Grid.Column="0" Clicked="BtnMenuInferiorHome_Clicked" BackgroundColor="Black" Text="Home" TextColor="White" FontAttributes="Bold, Italic"></Button>
+                <Button Grid.Column="1" Clicked="BtnMenuInferiorSobre_Clicked" BackgroundColor="Black" Text="Sobre" TextColor="White" FontAttributes="Bold, Italic" ></Button>
+                <Button Grid.Column="2" Clicked="BtnMenuInferiorSair_Clicked" BackgroundColor="Black"  Text="Sair" TextColor="White" FontAttributes="Bold, Italic"></Button>
+
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+    
+</ContentPage>

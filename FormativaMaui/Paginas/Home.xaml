@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormativaMaui.Paginas.Home"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" BackgroundColor="Black">
+            <Frame CornerRadius="10" Padding="0" Margin="10" HasShadow="True" BorderColor="Gray" BackgroundColor="Black">
+                <StackLayout>
+                    <Image Source="minecraft.svg" Aspect="AspectFit" HeightRequest="200"/>
+                    <StackLayout Padding="10" BackgroundColor="Black">
+                        <Label Text="Minecraft: Java and Bedrock Edition" 
+                               TextColor="White" 
+                               FontAttributes="Bold" 
+                               FontSize="Medium"/>
+                        <Label Text="Com o Minecraft: Java e Bedrock Edition, é possível alternar facilmente entre jogos com o iniciador unificado e o cross play em qualquer versão atual do Minecraft." 
+                               TextColor="White"
+                               FontSize="Small"/>
+                        <Label Text="R$99,90" 
+                               TextColor="White" 
+                               FontAttributes="Bold" 
+                               FontSize="Medium"/>
+                        <Button Text="COMPRAR" 
+                                BackgroundColor="Red" 
+                                TextColor="White" 
+                                FontAttributes="Bold"
+                                CornerRadius="20"
+                                HeightRequest="40"
+                                Margin="0,10,0,0"
+                                Clicked="OnBuyButtonClicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Padding="0" Margin="10" HasShadow="True" BorderColor="Gray" BackgroundColor="Black">
+                <StackLayout>
+                    <Image Source="batman.svg" Aspect="AspectFit" HeightRequest="200"/>
+                    <StackLayout Padding="10" BackgroundColor="Black">
+                        <Label Text="Batman Arkham Collection" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Label Text="Assuma o manto do morcego e jogue a trilogia completa do Cavaleiro das Trevas em Batman Arkham Collection." 
+                   TextColor="White"
+                   FontSize="Small"/>
+                        <Label Text="R$99,90" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Button Text="COMPRAR" 
+                    BackgroundColor="Red" 
+                    TextColor="White" 
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HeightRequest="40"
+                    Margin="0,10,0,0"
+                    Clicked="OnBuyButtonClicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Padding="0" Margin="10" HasShadow="True" BorderColor="Gray" BackgroundColor="Black">
+                <StackLayout>
+                    <Image Source="spider.svg" Aspect="AspectFit" HeightRequest="200"
+                           SemanticProperties.Description="dot net bot in a race car number eight"
+                           />
+                    <StackLayout Padding="10" BackgroundColor="Black">
+                        <Label Text="Spider-man: Miles Morales" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Label Text="Após os eventos de Marvel's Spider-Man Remasterizado, o adolescente Miles Morales está se adaptando à sua nova casa enquanto segue os passos do seu mentor, Peter Parker, para se tornar um novo Spider-Man. Mas uma violenta disputa de forças ameaça destruir seu novo lar e faz o aspirante a herói perceber que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles precisa reconhecer e assumir o título de Spider-Man." 
+                   TextColor="White"
+                   FontSize="Small"/>
+                        <Label Text="R$99,90" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Button Text="COMPRAR" 
+                    BackgroundColor="Red" 
+                    TextColor="White" 
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HeightRequest="40"
+                    Margin="0,10,0,0"
+                                Clicked="OnBuyButtonClicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Padding="0" Margin="10" HasShadow="True" BorderColor="Gray" BackgroundColor="Black">
+                <StackLayout>
+                    <Image Source="marvel.svg" Aspect="AspectFit" HeightRequest="200"/>
+                    <StackLayout Padding="10" BackgroundColor="Black">
+                        <Label Text="Marvel's Avengers - The Definitive Edition Pc" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Label Text="Os 3 principais motivos para jogar Marvel's Vingadores PC Reúna seu time de Poderosos Heróis da Terra, abrace seus poderes, e viva seus sonhos de Super Herói. Marvel's Avengers é um jogo épico, em terceira pessoa, de acção e aventura que combina uma história original e cinematográfica com um jogador e uma jogabilidade cooperativa.
+" 
+                   TextColor="White"
+                   FontSize="Small"/>
+                        <Label Text="R$99,90" 
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium"/>
+                        <Button Text="COMPRAR" 
+                    BackgroundColor="Red" 
+                    TextColor="White" 
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    HeightRequest="40"
+                                Clicked="OnBuyButtonClicked"
+                    Margin="0,10,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Black" HeightRequest="80" BorderColor="Red" Margin="0,10,0,0">
+                <Grid Row="2" Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="1" Clicked="BtnMenuInferiorSobre_Clicked" BackgroundColor="Black" Text="Sobre" TextColor="White" FontAttributes="Bold, Italic"></Button>
+                    <Button Grid.Column="0" Clicked="BtnMenuInferiorPerfil_Clicked" BackgroundColor="Black" Text="Perfil" TextColor="White" FontAttributes="Bold, Italic"></Button>
+                    <Button Grid.Column="2" Clicked="BtnMenuInferiorSair_Clicked" BackgroundColor="Black"  Text="Sair" TextColor="White" FontAttributes="Bold, Italic"></Button>
+
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>
